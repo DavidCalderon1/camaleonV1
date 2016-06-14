@@ -1,0 +1,45 @@
+<link rel="stylesheet" type="text/css" href="/app/view/css/administracion/sucursal/sucursal.css">
+<script type="text/javascript" src="/app/controller/js/administracion/sucursal/busqueda.js"></script>
+
+<div class="box">
+    <div class="contenido">
+        
+        <div class="subcontenido busqueda">
+            
+            <div class="busqueda_a">
+
+                <h1>Búsqueda Sucursal</h1> 
+
+                <section class="left">
+
+                    <form class="form" id="sucursal" method="post" action="/app/controller/php/administracion/sucursal/sucursal.php">
+
+                        <div class="subform">
+                            
+                            <input type="hidden" name="buscar" value="true"/>
+
+                            <div class="fieldbox textbox width_10">
+                                <label>BÚSQUEDA</label>
+                                <input class="field" type="search" name="parametro"/>
+                            </div><br>
+
+                            <button class="button">BUSCAR</button>
+                            
+                        </div>
+
+                    </form><br>
+                </section>
+
+                <section class="right result"></section>
+
+            </div>
+            
+            <button class="btnCloseContent"><i class="icon-cerrar_a"></i></button>
+            
+        </div>    
+    </div>
+</div>
+
+<div class="box menu">
+    <div class="menu"></div>
+</div>

@@ -1,0 +1,42 @@
+.contenido .home{
+    margin-top: 20px;text-align: center;
+}
+
+.contenido .home h1{
+    font-family: gothic;
+    font-size: 1.3em;
+    color: #000; 
+    margin-bottom: 10px;
+}
+
+.contenido .home a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.contenido .home a span{
+    border-radius: 50%;
+    margin:10px;  
+}
+
+.contenido .home a .icon-circle-up { 
+    font-size: 5em;
+    color: #7b7373;
+}
+
+.contenido .home .sub-cont .opcion{
+    width: 250px;
+    text-align: left;
+    margin: auto;
+    
+}
+.contenido .home .sub-cont .opcion a{
+    color: #5c5858;
+    font-family: gothic;
+    margin: 6px;
+}
+
+.contenido .home .sub-cont .opcion a:hover{
+    color: #253cba;
+}
+

@@ -1,0 +1,114 @@
+<script src="/app/controller/js/administracion/contabilidad/transaccion/form.js"></script>
+<link rel="stylesheet" type="text/css" href="/app/view/css/administracion/contabilidad/transaccion/transaccion.css">
+<!--<link rel="stylesheet" type="text/css" href="/app/view/css/administracion/contabilidad/transaccion/movimiento.css">-->
+
+<div class="box">
+    <div class="contenido">
+        
+        <div class="subcontenido transaccion">
+            
+            <h1>Transacción</h1><br>
+            
+            <div class="boxshadow">
+            
+                <form class="form" id="transaccion" action="/app/controller/php/administracion/contabilidad/transaccion/transaccion.php" method="post">
+
+                    <div class="subform">
+
+                        <input type="hidden" name="registrar" value="true">
+
+                        <div class="fieldbox textbox width_4">
+                            <label>FECHA</label>
+                            <input class="field" type="text" name="fecha" id="fecha">
+                        </div>
+
+                        <div class="fieldbox select width_6">
+                            <select class="field" name="tipodoc" id="tipodoc" data-entity="tipodoc">
+                                <option value="">TIPO DE DOCUMENTO</option>
+                            </select>
+                        </div>
+
+                        <div class="fieldbox textbox width_10">
+                            <label>DESCRIPCIÓN TRANSACCIÓN</label>
+                            <textarea class="field" name="descripcion" id="descripcion" rows="1"></textarea>
+                            <!--<input class="field" id="descripcion" type="text" name="descripcion"/>-->
+                        </div>
+
+                        <button class="button">CREAR</button>
+
+                    </div>
+
+                </form>
+
+                <!--<section class="movimientos">
+
+                    <h1>Movimientos</h1>
+
+                    <div class="bar">
+                        <a class="link" href="#" data-url="/app/view/html/administracion/contabilidad/transaccion/movimiento/form.html" data-name="Form Movimiento"><i class="icon-crear"></i></a>
+                    </div>
+
+                    <form class="infobox movimiento" method="post" action="/app/controller/php/administracion/contabilidad/transaccion/movimiento.php">
+
+                        <input name="instanciar" type="hidden" value="true"/>
+                        <input type="hidden" name="id_sucursal" value="id"/>
+                        <div class="subform">
+                            <div class="espacio a">
+                                <div class="subespacio"><a class="link" href="#"><i class="icon-ver"></i></a></div>
+                                <div class="campo vab">
+                                    <label>SUCURSAL</label>
+                                    <div class="text">PRINCIPAL</div>
+                                </div>
+                                <div class="campo vab">
+                                    <label>TERCERO O ACTIVO</label>
+                                    <div class="text">900.801.859-1</div>
+                                </div>
+                            </div>
+                            <div class="espacio b">
+                                <div class="campo vab">
+                                    <label>CUENTA</label>
+                                    <div class="text">11200501</div>
+                                </div>
+                                <div class="campo">
+                                    <label>DEBE</label>
+                                    <div class="text">3507500</div>
+                                </div>
+                                <div class="campo">
+                                    <label>HABER</label>
+                                    <div class="text">3507500</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                    
+                    <br>
+                    
+                </section>
+                
+                <section class="resumenmov">
+                    <h3>TOTAL</h3>
+                    <div class="campo">
+                        <label>DEBE</label>
+                        <div class="text">3507500</div>
+                    </div>
+                    <div class="campo">
+                        <label>HABER</label>
+                        <div class="text">3507500</div>
+                    </div>
+                </section>
+                
+                <br>-->
+                
+            </div>
+            
+            <button class="btnCloseContent"><i class="icon-cerrar_a"></i></button>
+            
+        </div><br>
+    </div>
+         
+</div>
+
+<div class="box menu">
+    <div class="menu"></div>
+</div>

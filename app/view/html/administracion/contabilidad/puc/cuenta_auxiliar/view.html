@@ -1,0 +1,86 @@
+<link rel="stylesheet" type="text/css" href="/app/view/css/administracion/contabilidad/puc/cuenta_auxiliar.css">
+<script src="/app/controller/js/administracion/contabilidad/puc/cuenta_auxiliar/view.js"></script>
+
+<div class="box">
+    <div class="contenido">
+        
+        <div class="subcontenido cuenta_auxiliar">
+            
+            <h1>Cuenta auxiliar</h1><br>
+
+            <form class="form view" id="cuenta_auxiliar" method="post" action="/app/controller/php/administracion/contabilidad/cuenta_auxiliar.php">
+                
+                <div class="subform">
+                    
+                    <div class="bar">
+                        <a class="link" href="#" data-url="/app/view/html/administracion/contabilidad/puc/cuenta_auxiliar/update.html" data-name="Update Cuenta Auxiliar"><i class="icon-editar"></i></a>
+                    </div>
+                
+                    <div class="fieldbox textbox width_3">
+                        <label>COD. SUBCUENTA</label>
+                        <input id="scnt_id" class="field" type="search" name="subcuenta" disabled/>
+                    </div>
+
+                    <div class="fieldbox textbox width_7">
+                        <label>NOMBRE SUBCUENTA</label>
+                        <input id="scnt_nombre" class="field" type="text" disabled/>
+                    </div><br>
+
+                    <div class="fieldbox textbox width_3">
+                        <label>COD. CUENTA</label>
+                        <input id="id" class="field" type="text" name="id" disabled/>
+                    </div>
+
+                    <div class="fieldbox textbox width_10">
+                        <label>NOMBRE CUENTA</label>
+                        <input id="nombre" class="field" type="text" name="nombre" disabled/>
+                    </div>
+
+                    <div class="fieldbox textbox width_10">
+                        <label>DESCRIPCION CUENTA AUXILIAR</label>
+                        <textarea id="descripcion" class="field" name="descripcion" id="descripcion" rows="1" disabled></textarea>
+                        <!--<input class="field" id="descripcion" type="text" name="descripcion"/>-->
+                    </div>
+
+                    <div class="fieldbox select width_4">
+                        <label>TIPO DE AJUSTE</label>
+                        <select id="ajuste" class="field" name="ajuste" disabled>
+                            <option value="ANUAL">ANUAL</option>
+                            <option value="MENSUAL">MENSUAL</option>
+                        </select>
+                    </div>
+
+                    <div class="fieldbox select width_4">
+                        <label>RQ. TERCERO O ACTIVO</label>
+                        <select id="reqta" class="field" name="reqta" disabled>
+                            <option value="true">SI</option>
+                            <option value="false">NO</option>
+                        </select>
+                    </div>
+                    
+                    <div class="fieldbox rc width_4">
+                        <label class="placeholder">ESTADO</label>
+                        <div class="option">
+                            <input id="std_activo" class="radiobutton" type="radio" name="estado" value="true" disabled>
+                            <label for="std_activo">ACTIVO</label>
+                        </div>
+                        <div class="option">
+                            <input id="std_inactivo" class="radiobutton" type="radio" name="estado" value="false" disabled>
+                            <label for="std_inactivo">INACTIVO</label>
+                        </div>
+                    </div><br>
+                
+                </div>
+
+            </form><br>
+            
+            <button class="btnCloseContent"><i class="icon-cerrar_a"></i></button>
+
+        </div>
+        
+    </div>
+</div>
+
+<div class="box menu">
+    <div class="menu"></div>
+</div>

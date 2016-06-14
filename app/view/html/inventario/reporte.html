@@ -1,0 +1,80 @@
+<link rel="stylesheet" type="text/css" href="/app/view/css/inventario/inventario.css">
+<script type="text/javascript" src="/app/controller/js/inventario/reporte.js"></script>
+
+<div class="box">
+    <div class="contenido">
+        
+        <div class="subcontenido busqueda">
+            
+            <div class="busqueda_a">
+
+                <h1>Saldo inventario</h1> 
+
+                <section class="left">
+
+                    <form class="form" id="inventario" method="post" action="/app/controller/php/inventario/inventario.php">
+
+                        <div class="subform">
+                            
+                            <input type="hidden" name="reporte" value="true"/>
+
+                            <div class="fieldbox select width_10">
+                                <select class="field" name="item" id="item" data-entity="item">
+                                    <option value="">ITEM</option>
+                                </select>
+                            </div><br>
+
+                            <button class="button">GENERAR</button>
+                            
+                        </div>
+
+                    </form><br>
+                </section>
+
+                <section class="right">
+                    
+                    <form class="infobox inventario" method="post" action="/app/controller/php/inventario/inventario.php">
+                        
+                        <input name="instanciar" type="hidden" value="true"/>
+                        <input type="hidden" name="id" value="1"/>
+                        <div class="subform">
+                            <div class="espacio up">
+                                <h2 class="item">ITEM</h2>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>FECHA</th>
+                                            <th>TIPO</th>
+                                            <th>CANTIDAD</th>
+                                            <th>VALOR</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="result">
+                                        <tr>
+                                            <td>01/01/2015</td>
+                                            <td>ENTRADA</td>
+                                            <td>20</td>
+                                            <td>4500</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="espacio down"><a class="link" href="#"><i class="icon-ver"></i></a></div>
+
+                        </div>
+                    
+                    </form>
+                
+                </section>
+
+            </div>
+            
+            <button class="btnCloseContent"><i class="icon-cerrar_a"></i></button>
+            
+        </div>    
+    </div>
+</div>
+
+<div class="box menu">
+    <div class="menu"></div>
+</div> 

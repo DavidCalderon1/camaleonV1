@@ -1,0 +1,138 @@
+
+<link rel="stylesheet" type="text/css" href="/app/view/css/tercero/tercero.css"/>
+<script type="text/javascript" src="/app/controller/js/tercero/form.js"></script>
+
+<div class="box">
+	<div class="contenido">
+		<div class="subcontenido tercero">
+			<h1>Registrar tercero</h1><br>
+
+			<form class="form" id="tercero" method="post" action="/app/controller/php/tercero/tercero.php">
+
+				<div class="subform">
+					<input type="hidden" name="registrar" value="true">
+				
+					<div class="fieldbox select width_3">
+	                    <select class="field" name="regimen">
+	                    	<option value="">REGIMEN</option>
+	                        <option value="SIMPLIFICADO">SIMPLIFICADO</option>
+	                        <option value="COMUN">COMUN</option>
+	                    </select>
+	                </div>
+
+	                <div class="fieldbox rc width_3">
+	                    <label class="placeholder">GRAN CONTRIBUYENTE</label>
+	                    <div class="option">
+	                        <input id="si" class="radiobutton" type="radio" name="estado" value="true">
+	                    	<label for="si">SI</label>
+	                    </div>
+	                    <div class="option">
+	                        <input id="no" class="radiobutton" type="radio" name="estado" value="false" checked="true">
+	                        <label for="no">NO</label>
+	                    </div>
+	                </div>
+
+					<div class="fieldbox rc width_4">
+	                    <label class="placeholder">TIPO</label>
+	                    <div class="option">
+	                        <input id="natural" class="radiobutton" type="radio" name="tipo" value="persona" checked="true">
+	                    	<label for="natural">NATURAL</label>
+	                    </div>
+	                    <div class="option">
+	                        <input id="juridica" class="radiobutton" type="radio" name="tipo" value="empresa">
+	                        <label for="juridica">JURIDICA</label>
+	                    </div>
+	                </div><br>
+
+	                <div class="fieldbox textbox width_4 persona">
+	                    <label>NOMBRES</label>
+	                    <input class="field" type="text" name="nombre"/>
+	                </div>
+
+	                <div class="fieldbox textbox width_4 persona">
+	                    <label>APELLIDOS</label>
+	                    <input class="field" type="text" name="apellido"/>
+	                </div>
+
+	                <div class="fieldbox select width_4 persona">
+	                    <select class="field" name="tipo_documento">
+	                    	<option value="">TIPO DE DOCUMENTO</option>
+	                        <option value="CEDULA DE CIUDADANIA">CEDULA DE CIUDADANIA</option>
+	                        <option value="REGISTRO CIVIL">REGISTRO CIVIL</option>
+	                        <option value="PASAPORTE">PASAPORTE</option>
+	                        <option value="TARJETA DE IDENTIDAD">TARJETA DE IDENTIDAD</option>
+	                        <option value="CEDULA DE EXTRANJERIA">CEDULA DE EXTRANJERIA</option>
+	                        <option value="CODIGO FISCAL">CODIGO FISCAL</option>
+	                    </select>
+	                </div>		
+					
+					<div class="fieldbox textbox width_4 persona">
+	                    <label>NUMERO DOCUMENTO</label>
+	                    <input class="field" type="text" name="numero_documento"/>
+	                </div>
+					
+					<div class="fieldbox textbox width_4 juridica">
+	                    <label>NIT</label>
+	                    <input class="field" type="text" name="nit"/>
+	                </div>
+					
+					<div class="fieldbox textbox width_4 juridica">
+	                    <label>RAZON SOCIAL</label>
+	                    <input class="field" type="text" name="razon_social"/>
+	                </div>
+					
+					<div class="fieldbox select width_4 juridica">
+	                    <select class="field" name="naturaleza">
+	                    	<option value="">NATURALEZA</option>
+	                        <option value="PUBLICA">PUBLICA</option>
+	                        <option value="PRIVADA">PRIVADA</option>
+	                        <option value="MIXTA">MIXTA</option>
+	                    </select>
+	                </div>
+
+    				<div class="fieldbox textbox width_4 juridica">
+	                    <label>FECHA DE CONSTITUCION</label>
+	                    <input class="field" type="text" name="fecha"/>
+	                </div>
+
+					<div class="fieldbox select width_4">
+	                    <select class="field" name="pais" id="pais" data-entity="pais">
+	                        <option value="">PAIS</option>
+	                    </select>
+	                </div>
+
+					<div class="fieldbox select width_4">
+	                    <select class="field" name="departamento" id="dep" data-entity="departamento">
+	                        <option value="">DEPARTAMENTO</option>
+	                    </select>
+	                </div>
+
+	                <div class="fieldbox select width_4">
+	                    <select class="field" name="ciudad" id="cdd" data-entity="ciudad">
+	                        <option value="">CIUDAD</option>
+	                    </select>
+	                </div><br>
+					
+					<div class="fieldbox textbox width_4">
+	                    <label>DIRECCION</label>
+	                    <input class="field" type="text" name="direccion"/>
+	                </div>
+
+	                <div class="fieldbox textbox width_4">
+	                    <label>TELEFONO</label>
+	                    <input class="field" type="text" name="telefono"/>
+	                </div>
+					<br>
+
+	                <button class="button">AGREGAR</button>
+
+				</div>
+			</form>
+			<button class="btnCloseContent"><i class="icon-cerrar_a"></i></button>
+		</div>
+	</div>
+</div>
+
+<div class="box menu">
+    <div class="menu"></div>
+</div>

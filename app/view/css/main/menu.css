@@ -1,0 +1,131 @@
+#subbody #contenedor .box .menu{
+    margin: auto;
+}
+
+/* inf. usuario */
+
+#subbody #contenedor .box .menu .user-name{
+    width: 300px;
+    top:3%;
+    right: 1%;
+    position: absolute;
+    text-align: right;   
+}
+
+#subbody #contenedor .box .menu .user-name p, 
+#subbody #contenedor .box .menu .user-name a{
+    font-family: Aldo-SemiBold;
+    color: #FFF;
+    font-size: 1.2em;
+}
+
+#subbody #contenedor .box .menu .user-name a{
+    margin: 10px;
+    text-decoration: none;
+}
+
+#subbody #contenedor .box .menu .user-name a:hover{
+    color:  cadetblue;  
+}
+
+/* menu navegacion */
+
+nav{
+    list-style: none;
+    text-align: center;
+}
+
+/* titulos */
+
+nav lh.title{
+    font-family: gothic;
+    color: #528688;
+    text-align: center;
+    margin: 8px;
+    padding: 11px;
+    display: block;
+}
+
+nav lh.title.a{
+    text-decoration: overline;
+    font-size: 1.5em;
+}
+
+nav lh.title.a i{
+    font-size: 1.05em;
+}
+
+nav lh.title.b{
+    font-size: 1.2em;
+}
+
+/* items lista */
+
+nav li a{
+    text-decoration: none;
+    font-family: gothic;
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+nav li.submenu.a a{
+    text-align: left;
+    margin-left: 10%;
+}
+
+/* hover iconos items */
+
+nav li a i {
+    display: inline-block;
+    vertical-align: initial;
+}
+
+nav li a:hover i,
+nav li.submenu.a li.submenu.a nav a:hover,
+nav li.submenu.b nav a:hover
+{
+    color: cadetblue;
+}
+
+/* submenus */
+
+nav li.submenu.a nav{
+    display: none;
+    margin-left: 15px;
+}
+
+nav li.submenu.b div{
+    position: absolute;
+    top: -100%;bottom: 100%;
+    left: 0%;
+    width: 100%;
+    display: flex;
+    background-color: rgba(38, 50, 56, 0.9);
+    -webkit-transition:all 1s;
+    transition:all 1s;
+}
+
+nav li.submenu.b div.open{
+    top: 0%;bottom: 0%;
+}
+
+nav li.submenu.b div nav{
+    margin:auto;
+}
+
+nav li.submenu.b .volver{
+    text-decoration: underline;
+    font-family: gothic;
+    font-size: 1em;
+    color: #528688;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+}
+
+nav li.submenu.b .volver:hover{
+    color: #64a7aa;
+}

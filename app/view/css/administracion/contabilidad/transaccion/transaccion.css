@@ -1,0 +1,199 @@
+.subcontenido.transaccion{
+    padding-top: 60px;
+    width: 82%;
+    position: relative;
+    display:block; 
+    margin: auto;
+}
+
+.transaccion h1{
+    font-family: gothic;
+    font-size: 1.4em;
+}
+
+.transaccion .boxshadow{
+    box-shadow:-1px 1px 6px #757575;
+    width: 80%;
+    margin: auto;
+}
+
+.form#transaccion{
+    box-shadow:none;
+}
+
+
+.form#transaccion .textbox .field {
+    text-transform: uppercase;
+}
+
+.form#transaccion .textbox #descripcion {
+    text-transform: none;
+}
+
+.subcontenido.transaccion section.movimientos{
+    width: 90%;
+    margin: auto;
+    text-align: left;
+}
+
+.subcontenido.transaccion section.movimientos .bar{
+    width: 100%;
+    text-align: right;
+}
+
+.subcontenido.transaccion section.movimientos .bar a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.subcontenido.transaccion section.movimientos .bar a i{
+    font-size: 3em;
+    color: #757575;
+}
+
+.subcontenido.transaccion section.movimientos .bar a i:hover{
+    color: #006C00;
+}
+
+.subcontenido.transaccion section.resumenmov{
+    width: 50%;
+    margin-left: 42%; margin-right: 8%;
+}
+
+.subcontenido.transaccion section.resumenmov h3{
+    font-family: gothic;
+    display: block;
+}
+
+.subcontenido.transaccion section.resumenmov .campo{
+    position: relative;
+    display: inline-block;
+    width: 48%;
+    font-family: gothic;
+    margin-top: 14px;
+}
+
+.subcontenido.transaccion section.resumenmov .campo label{
+    position: absolute;
+    width: 100%;
+    top: -14px; left: 2px;
+    font-size: 0.7em;color: #00b74d;
+}
+
+.subcontenido.transaccion section.resumenmov .campo .text{
+    position: relative;
+    width: 100%;
+    color: #716d6d;
+    overflow: hidden;
+}
+
+.infobox.transaccion .espacio.left{
+    text-align: left;
+    width: 74%;
+    font-family: gothic;
+    color: #716d6d;
+}
+
+.infobox.transaccion .espacio.left h2{
+    font-size: .9em;
+}
+
+.infobox.transaccion .espacio.left p{
+    font-size: .8em;
+}
+
+.infobox.transaccion .espacio.right{
+    text-align: right;
+    width: 24%;
+}
+
+.infobox.transaccion .espacio.right i{
+    color:#13cc30;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width:1280px) {
+ 
+    .subcontenido.transaccion{
+        width: 88%;
+    }
+
+}
+
+@media screen and (max-width:1120px) {
+    
+    .subcontenido.transaccion{
+        width: 94%;
+    }
+    
+    .subcontenido.transaccion section.resumenmov{
+        width: 55%;
+        margin-left: 37%; margin-right: 8%;
+    }
+
+}
+
+@media screen and (max-width: 960px){
+    
+    .subcontenido.transaccion{
+        width: 100%;
+    }
+    
+    .transaccion .boxshadow{
+        width: 85%;
+    }
+    
+    .subcontenido.transaccion section.resumenmov{
+        width: 60%;
+        margin-left: 32%; margin-right: 8%;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    
+    .transaccion .boxshadow{
+        width: 90%;
+    }
+    
+    .subcontenido.transaccion section.resumenmov{
+        width: 65%;
+        margin-left: 27%; margin-right: 8%;
+    }
+    
+}
+
+@media screen and (max-width: 640px){
+    
+    .transaccion .boxshadow{
+        width: 95%;
+    }
+    
+    .form#transaccion .fieldbox {
+        width: 75%;
+        margin-left: auto; margin-right: auto;
+    }
+    
+    .subcontenido.transaccion section.resumenmov{
+        width: 70%;
+        margin-left: 22%; margin-right: 8%;
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    
+    .transaccion .boxshadow{
+        width: 100%;
+    }
+
+    .form#transaccion .fieldbox {
+        width: 95%;
+    }
+    
+    .subcontenido.transaccion section.resumenmov{
+        width: 80%;
+        margin-left: 10%; margin-right: 10%;
+    }
+    
+}

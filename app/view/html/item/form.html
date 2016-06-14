@@ -1,0 +1,78 @@
+<!--
+    /**
+    * @autor : Steven Medina y Yordy Gelvez
+    * @editor : Sublime Text 3
+    * @metodo : HTML5
+    * @descripcion : desarrollo del formulario para registro de las tablas Item y Materia Prima
+    */
+-->
+
+<link rel="stylesheet" type="text/css" href="/app/view/css/item/item.css"/>
+<script type="text/javascript" src="/app/controller/js/item/form.js"></script>
+<div class="box">
+	<div class="contenido">
+		<div class="subcontenido item">
+			<h1>ITEM</h1><br>
+			<form class="form" id="item" method="post" action="/app/controller/php/item/item.php">
+				<div class="subform">
+					<input type="hidden" name="registrar" value="true">
+					<div class="fieldbox rc width_8">
+						<div class="option">
+							<input class="radiobutton" type="radio" name="tipo" value="materia_prima" checked>
+							<label for="materia prima">Materia prima</label>
+						</div>
+						<div class="option">
+							<input class="radiobutton" type="radio" name="tipo" value="producto_proceso">
+							<label for="producto">Producto en proceso</label>
+						</div>
+						<div class="option">
+							<input type="radio" name="tipo" value="producto_terminado">
+							<label for="producto terminado">Producto terminado</label>
+						</div>
+         		</div>
+					<br>
+					<div class="fieldbox textbox width_3 ">
+						<label>REFERENCIA</label>
+						<input class="field" type="text" name="referencia">
+					</div>
+					<div class="fieldbox textbox width_5 ">
+						<label>NOMBRE</label>
+						<input class="field" type="text" name="nombre">
+					</div>
+					<div class="fieldbox textbox width_8">
+						<label>DESCRIPCIÓN</label>
+						<input class="field" type="text" name="descripcion">
+					</div>
+					<br>
+					<div class="fieldbox textbox width_5 ">
+						<label>UNIDAD DE MEDIDA</label>
+						<input class="field" type="text" name="unidad">
+					</div>
+					<div class="fieldbox textbox width_2">
+						<label>% IVA</label>
+						<input class="field" type="text" name="iva">
+         		</div>
+					<div class="fieldbox textbox width_9">
+						<label>Caracteristicas</label>
+					</div>
+					</br><br>
+					<div  class="fieldbox textbox width_3">
+						<label>NOMBRE</label>
+						<input class="field" type="text"  name="c_nombre">
+					</div>
+					<div  class="fieldbox textbox width_4">
+						<label>DESCRIPCIÓN</label>
+						<input class="field" type="text" name="c_descripcion">
+					</div>
+					<a class="btn btn-primary" href="javascript:void(0);" id="addInput">
+						<i class="icon-confirmar"></i>
+					</a>
+					<div id="dynamicDiv"></div>
+					<br>
+					<button class="button">REGISTRAR</button>
+				</div>
+			</form>
+			<button class="btnCloseContent"><i class="icon-cerrar_a"></i></button>
+		</div>
+	</div>
+</div>

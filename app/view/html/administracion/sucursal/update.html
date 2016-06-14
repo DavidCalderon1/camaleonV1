@@ -1,0 +1,79 @@
+<!--
+    /**
+    * @autor : Yordy Gelvez, Cristian Goyeneche y Juan Camilo
+    * @editor : Sublime Text 3
+    * @metodo : HTML5
+    * @descripcion : desarrollo del formulario para actualizaciones de sucursal
+    */
+-->
+
+<link rel="stylesheet" type="text/css" href="/app/view/css/administracion/sucursal/sucursal.css">
+<script src="/app/controller/js/administracion/sucursal/update.js"></script>
+
+<div class="box">
+    <div class="contenido">
+        
+        <div class="subcontenido sucursal">
+            
+            <h1>Sucursal</h1><br>
+            
+            <form class="form" id="sucursal" method="post" action="/app/controller/php/administracion/sucursal/sucursal.php" >
+
+                <div class="subform">
+
+                    <input type="hidden" name="actualizar" value="true">            
+                    <div class="fieldbox textbox width_8">
+                        <label>NOMBRE SUCURSAL</label>
+                        <input class="field" type="text" name="nombre" id="nombre"> 
+                    </div>
+
+                   <div class="fieldbox select width_5">
+                        <select class="field" name="pais" id="pais" data-entity="pais">
+                            <option value="">PAIS</option>
+                        </select>
+                    </div>
+
+                    <div class="fieldbox select width_5">
+                        <select class="field" name="departamento" id="dep" data-entity="departamento">
+                            <option value="">DEPARTAMENTO</option>
+                        </select>
+                    </div>
+
+                    <div class="fieldbox select width_5">
+                        <select class="field" name="ciudad" id="cdd" data-entity="ciudad">
+                            <option value="">CIUDAD</option>
+                        </select>
+                    </div>
+
+                    <div class="fieldbox textbox width_7">
+                        <label>DIRECCIÓN</label>
+                        <input class="field" type="text" name="dir" id="dir">
+                    </div>
+
+                    <div class="fieldbox textbox width_3">
+                        <label>TELÉFONO</label>
+                        <input class="field" type="text" name="tel" id="tel">
+                    </div><br>
+
+                    <button class="button">MODIFICAR</button>
+
+                </div>
+
+            </form><br>
+            
+            <button class="btnCloseContent"><i class="icon-cerrar_a"></i></button>     
+        
+       </div>
+    </div>  
+</div>
+       
+<div clas s="box menu">
+    <div class="menu"></div>
+</div>
+
+
+
+
+
+
+

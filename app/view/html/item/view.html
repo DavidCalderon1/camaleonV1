@@ -1,0 +1,72 @@
+<!--
+    /**
+    * @autor : Steven Medina y Yordy Gelvez
+    * @editor : Sublime Text 3
+    * @metodo : HTML5
+    * @descripcion : desarrollo del formulario para visualizacion de datos
+    */
+-->
+
+<link rel="stylesheet" type="text/css" href="/app/view/css/item/item.css"/>
+<script type="text/javascript" src="/app/controller/js/item/view.js"></script>
+<div class="box">
+	<div class="contenido">
+		<div class="subcontenido item">
+			<h1>Item</h1><br>
+			<form class="form view" id="item" method="post" action="/app/controller/php/item/item.php">
+				<div class="subform">
+					
+					<div class="bar">
+                        <a class="link" href="#" data-url="/app/view/html/item/update.html" data-name="Update Item"><i class="icon-editar"></i></a>
+                    </div>
+
+					<input type="hidden" name="registrar" value="true">
+					<div class="fieldbox rc width_8">
+						<div class="option">
+							<input class="radiobutton" type="radio" name="tipo" value="materia_prima" checked disabled>
+							<label for="materia prima">Materia prima</label>
+						</div>
+						<div class="option">
+							<input class="radiobutton" type="radio" name="tipo" value="producto_proceso" disabled>
+							<label for="producto">Producto en proceso</label>
+						</div>
+						<div class="option">
+							<input type="radio" name="tipo" value="producto_terminado" disabled>
+							<label for="producto terminado">Producto terminado</label>
+						</div>
+         			</div>
+					<br>
+					<div class="fieldbox textbox width_3 ">
+						<label>REFERENCIA</label>
+						<input class="field" type="text" name="referencia" disabled>
+					</div>
+					<div class="fieldbox textbox width_5 ">
+						<label>NOMBRE</label>
+						<input class="field" type="text" name="nombre" disabled>
+					</div>
+					<div class="fieldbox textbox width_8">
+						<label>DESCRIPCIÓN</label>
+						<input class="field" type="text" name="descripcion" disabled>
+					</div>
+					<br>
+					<div class="fieldbox textbox width_5 ">
+						<label>UNIDAD DE MEDIDA</label>
+						<input class="field" type="text" name="unidad" disabled>
+					</div>
+					<div class="fieldbox textbox width_2">
+						<label>% IVA</label>
+						<input class="field" type="text" name="iva" disabled>
+         			</div>
+					<div class="fieldbox textbox width_9">
+						<label>Caracteristicas</label>
+					</div>
+					</br>
+
+					<div id="dynamicDiv"></div>
+					<br>
+				</div>
+			</form>
+			<button class="btnCloseContent"><i class="icon-cerrar_a"></i></button>
+		</div>
+	</div>
+</div>

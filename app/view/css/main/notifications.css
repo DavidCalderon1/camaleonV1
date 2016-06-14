@@ -1,0 +1,159 @@
+@charset "utf-8";
+/* CSS Document */
+
+.notifications {
+    font-family: 'gothic' !important;
+    position: absolute;
+    top: 80px;right: 0;
+    z-index: 1;
+    overflow-y: auto;
+}
+
+.notifications.widescreen {
+    top: 0px;bottom: 0px; left: 0px; right: 0px;
+    display: flex;
+    background: rgba(33,33,33,.6);
+}
+
+.notification {
+    display: none;
+    margin: 5px;
+    background-color: rgba(33,33,33,.8);
+    color: #FAFAFA;
+}
+
+.notification .close{
+    width: 100%;
+    text-align: right;
+}
+
+.notification .close i{
+    padding-right: 5px;
+    font-size: 1em;
+    color: #9E9E9E;
+    cursor: pointer;
+}
+
+.notification .close i:hover{
+    color: #FAFAFA;
+}
+
+.notification .icon{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.notification .icon i{
+    font-size: 2em;
+}
+
+.notification .icon i.info{
+    color: #2196F3;
+}
+
+.notification .icon i.error{
+    color: #F44336;
+}
+
+.notification .icon i.warn{
+    color: #FFC107;
+}
+
+.notification .message{
+    display: inline-block;
+    vertical-align: middle;
+    width: 80%;
+    word-wrap: break-word;
+    margin-bottom: 8px;
+}
+
+.notification .btns{
+    float: right;
+}
+
+.notification button {
+    display: inline-block;
+    margin: 9px; margin-left: 0px;
+    padding: 3px;
+    color: #FAFAFA;
+    background-color: transparent;
+    border: 1px solid #FAFAFA;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.notification button:hover{
+    background-color: #2196F3;
+    border: 1px solid #2196F3;
+    box-shadow: -1px 1px 6px #757575;
+    -moz-box-shadow: -1px 1px 6px #757575;
+    -webkit-box-shadow: -1px 1px 6px #757575;
+}
+
+.notification button:active{
+    box-shadow: 0px 0px 0px #757575;
+    -moz-box-shadow: 0px 0px 0px #757575;
+    -webkit-box-shadow: 0px 0px 0px #757575;
+}
+
+.notification.msg {
+    width: 300px;
+}
+
+.notification.confirm {
+    width: 35%;
+    margin: auto;
+}
+
+.notification.confirm .close i{
+    color: #9E9E9E;
+}
+
+.notification.confirm .close i:hover{
+    color: #FAFAFA;
+}
+
+@media screen and (max-width: 1024px){
+    
+    .notification.confirm {
+        width: 40%;
+    }
+    
+}
+
+@media screen and (max-width: 896px){
+    
+    .notification.confirm {
+        width: 50%;
+    }
+ 
+}
+
+@media screen and (max-width: 768px){
+    
+    .notification.confirm {
+        width: 60%;
+    }
+    
+}
+
+@media screen and (max-width: 640px){
+    
+    .notification.confirm {
+        width: 75%;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    
+    .notifications {
+        top: auto; bottom: 0px; right: 0px;
+    }
+    
+    .notification.confirm {
+        width: 90%;    
+    }
+
+}

@@ -1,0 +1,79 @@
+.subcontenido.cuenta_auxiliar{
+    padding-top: 60px;
+    width: 82%;
+    position: relative;
+    display:block; 
+    margin: auto;
+}
+
+.cuenta_auxiliar h1{
+    font-family: gothic;
+    font-size: 1.4em;
+}
+
+.form#cuenta_auxiliar{
+    width: 90%;
+}
+
+.form#cuenta_auxiliar .textbox .field {
+    text-transform: uppercase;
+}
+
+.form#cuenta_auxiliar .textbox #descripcion {
+    text-transform: none;
+}
+
+@media screen and (max-width:1280px) {
+ 
+    .subcontenido.cuenta_auxiliar{
+        width: 88%;
+    }
+
+}
+
+@media screen and (max-width:1120px) {
+    
+    .subcontenido.cuenta_auxiliar{
+        width: 94%;
+    }
+
+}
+
+@media screen and (max-width: 960px){
+    
+    .subcontenido.cuenta_auxiliar{
+        width: 100%;
+    }
+    
+    .form#cuenta_auxiliar{
+        width: 95%;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    
+    .subcontenido.cuenta_auxiliar{
+        width: 100%;
+    }
+    
+    .form#cuenta_auxiliar{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 640px){
+    
+    .form#cuenta_auxiliar .fieldbox {
+        width: 75%;
+        margin-left: auto; margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .form#cuenta_auxiliar .fieldbox {
+        width: 95%;
+    }
+}

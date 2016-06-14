@@ -1,0 +1,89 @@
+.contenido .login{
+    width: 100%;
+    padding-top: 60px;
+}
+
+.form#login{
+    display: none;
+    width: 60%;
+    
+}
+
+
+.contenido .video{
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+
+
+.contenido .video video{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background:#000;
+}
+
+@media screen and (max-width:1280px) {
+    
+    .form#login{
+        width: 65%;
+    }
+
+
+}
+
+@media screen and (max-width:1120px) {
+    
+    .form#login{
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 960px){
+    
+    .contenido .video video{
+        height: 360px;
+    }
+    
+    .form#login{
+        width: 75%;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    
+    .form#login{
+        width: 80%;
+    }
+
+    .contenido .video video{
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    
+    .contenido .video video{
+        height: 280px;
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    
+    .contenido .video{
+        width: 90%;
+    }
+        
+    .contenido .video video{
+        height: 240px;
+    }
+
+    
+}
+
+

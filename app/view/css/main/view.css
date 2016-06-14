@@ -1,0 +1,50 @@
+.view .fieldbox.textbox label {
+    font-size: .8em; color: #006C00;
+    top:-14px;
+}
+
+.view .fieldbox.textbox .field {
+    border-bottom: none;
+    font-size: 1em;
+}
+
+.view .fieldbox.select{
+    border: none;
+}
+
+.view .fieldbox.select select:disabled{
+    background: transparent;
+}
+
+.view .fieldbox.select label{
+    position: absolute;
+    width: 100%;
+    top: -14px; left: 2px;
+    font-size: .8em;
+    color:#006C00;
+}
+
+.view .fieldbox.rc label.placeholder{
+    color:#006C00;
+    font-size: 0.8em;
+}
+
+.view .bar{
+    width: 100%;
+    text-align: right;
+}
+
+.view .bar a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.view .bar a i{
+    font-size: 3em;
+    color: #757575;
+}
+
+.view .bar a i:hover{
+    color: #006C00;
+}
+

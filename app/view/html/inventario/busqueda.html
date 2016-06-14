@@ -1,0 +1,64 @@
+<link rel="stylesheet" type="text/css" href="/app/view/css/inventario/inventario.css">
+<script type="text/javascript" src="/app/controller/js/inventario/busqueda.js"></script>
+
+<div class="box">
+    <div class="contenido">
+        
+        <div class="subcontenido busqueda">
+            
+            <div class="busqueda_a">
+
+                <h1>Búsqueda Inventario</h1> 
+
+                <section class="left">
+
+                    <form class="form" id="inventario" method="post" action="/app/controller/php/inventario/inventario.php">
+
+                        <div class="subform">
+                            
+                            <input type="hidden" name="buscar" value="true"/>
+
+                            <div class="fieldbox textbox width_10">
+                                <label>FECHA</label>
+                                <input class="field" type="search" name="fecha"/>
+                            </div>
+                            
+                            <div class="fieldbox select width_10">
+                                <select class="field" name="item" id="item" data-entity="item">
+                                    <option value="">ITEM</option>
+                                </select>
+                            </div><br>
+
+                            <button class="button">BUSCAR</button>
+                            
+                        </div>
+
+                    </form><br>
+                </section>
+
+                <section class="right result">
+                    
+                    <form class="infobox inventario" method="post" action="/app/controller/php/inventario/inventario.php">
+                        
+                        <input name="instanciar" type="hidden" value="true"/>
+                        <input type="hidden" name="id" value="1"/>
+                        <div class="subform">
+                            <div class="espacio left"><h2>ITEM</h2><p>FECHA - ENTRADA/SALIDA</p></div>
+                            <div class="espacio right"><a class="link" href="#"><i class="icon-ver"></i></a></div>
+                        </div>
+                    
+                    </form>
+                
+                </section>
+
+            </div>
+            
+            <button class="btnCloseContent"><i class="icon-cerrar_a"></i></button>
+            
+        </div>    
+    </div>
+</div>
+
+<div class="box menu">
+    <div class="menu"></div>
+</div> 

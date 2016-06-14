@@ -1,0 +1,66 @@
+<link rel="stylesheet" type="text/css" href="/app/view/css/administracion/contabilidad/puc/subcuenta.css">
+<script src="/app/controller/js/administracion/contabilidad/puc/subcuenta/update.js"></script>
+
+<div class="box">
+    <div class="contenido">
+        
+        <div class="subcontenido subcuenta">
+            
+            <h1>Subcuenta</h1><br>
+
+            <form class="form" id="subcuenta" method="post" action="/app/controller/php/administracion/contabilidad/subcuenta.php">
+                
+                <div class="subform">
+                    
+                    <input type="hidden" name="actualizar" value="true">
+                
+                    <div class="fieldbox textbox width_3">
+                        <label>COD. CUENTA</label>
+                        <input id="cnt_id" class="field" type="search" name="cuenta"/>
+                    </div>
+
+                    <!--<div class="fieldbox textbox width_7">
+                        <label>NOMBRE SUBCUENTA</label>
+                        <input id="scnt_nombre" class="field" type="text" disabled/>
+                    </div>--><br>
+
+                    <div class="fieldbox textbox width_3">
+                        <label>COD. SUBCUENTA</label>
+                        <input id="id" class="field" type="text" name="id"/>
+                    </div>
+
+                    <div class="fieldbox textbox width_10">
+                        <label>NOMBRE SUBCUENTA</label>
+                        <input id="nombre" class="field" type="text" name="nombre"/>
+                    </div>
+
+                    <div class="fieldbox textbox width_10">
+                        <label>DESCRIPCION SUBCUENTA</label>
+                        <textarea id="descripcion" class="field" name="descripcion" id="descripcion" rows="1"></textarea>
+                        <!--<input class="field" id="descripcion" type="text" name="descripcion"/>-->
+                    </div>
+
+                    <div class="fieldbox select width_4">
+                        <!--<label>TIPO DE AJUSTE</label>-->
+                        <select id="ajuste" class="field" name="ajuste">
+                            <option value="ANUAL">ANUAL</option>
+                            <option value="MENSUAL">MENSUAL</option>
+                        </select>
+                    </div>
+                    
+                    <button class="button">MODIFICAR</button>
+                
+                </div>
+
+            </form><br>
+            
+            <button class="btnCloseContent"><i class="icon-cerrar_a"></i></button>
+
+        </div>
+        
+    </div>
+</div>
+
+<div class="box menu">
+    <div class="menu"></div>
+</div>

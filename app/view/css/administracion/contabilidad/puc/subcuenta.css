@@ -1,0 +1,79 @@
+.subcontenido.subcuenta{
+    padding-top: 60px;
+    width: 82%;
+    position: relative;
+    display:block; 
+    margin: auto;
+}
+
+.subcuenta h1{
+    font-family: gothic;
+    font-size: 1.4em;
+}
+
+.form#subcuenta{
+    width: 90%;
+}
+
+.form#subcuenta .textbox .field {
+    text-transform: uppercase;
+}
+
+.form#subcuenta .textbox #descripcion {
+    text-transform: none;
+}
+
+@media screen and (max-width:1280px) {
+ 
+    .subcontenido.subcuenta{
+        width: 88%;
+    }
+
+}
+
+@media screen and (max-width:1120px) {
+    
+    .subcontenido.subcuenta{
+        width: 94%;
+    }
+
+}
+
+@media screen and (max-width: 960px){
+    
+    .subcontenido.subcuenta{
+        width: 100%;
+    }
+    
+    .form#subcuenta{
+        width: 95%;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    
+    .subcontenido.subcuenta{
+        width: 100%;
+    }
+    
+    .form#subcuenta{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 640px){
+    
+    .form#subcuenta .fieldbox {
+        width: 75%;
+        margin-left: auto; margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .form#subcuenta .fieldbox {
+        width: 95%;
+    }
+}

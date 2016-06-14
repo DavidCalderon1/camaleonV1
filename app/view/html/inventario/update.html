@@ -1,0 +1,59 @@
+<script src="/app/controller/js/inventario/update.js"></script>
+<link rel="stylesheet" type="text/css" href="/app/view/css/inventario/inventario.css">
+
+
+<div class="box">
+    <div class="contenido">
+        
+        <div class="subcontenido inventario">
+            
+            <h1>Inventario</h1><br>
+            
+            <form class="form" id="inventario" action="/app/controller/php/inventario/inventario.php" method="post">
+
+                <div class="subform">
+                    <input type="hidden" name="actualizar" value="true">
+                    <div class="fieldbox textbox width_3">
+                        <label>FECHA</label>
+                        <input class="field" type="text" name="fecha" id="fecha">
+                    </div>
+
+                    <div class="fieldbox select width_4">
+                        <select class="field" name="tipo" id="tipo">
+                            <option value="">ENTRADA/SALIDA</option>
+                            <option value="ENTRADA">ENTRADA</option>
+                            <option value="SALIDA">SALIDA</option>
+                        </select>
+                    </div>
+
+                    <div class="fieldbox select width_6 item">
+                        <select class="field" name="item" id="item" data-entity="item">
+                            <option value="">ITEM</option>
+                        </select>
+                    </div>
+
+                    <div class="fieldbox textbox width_2">
+                        <label>CANTIDAD</label>
+                        <input class="field" type="text" name="cantidad" id="cantidad">
+                    </div>
+
+                    <div class="fieldbox textbox width_3">
+                        <label>VALOR UNITARIO</label>
+                        <input class="field" type="text" name="valorunit" id="valorunit">
+                    </div>
+                </div>   
+
+                <button class="button">ACTUALIZAR</button> 
+
+            </form>
+            
+            <button class="btnCloseContent"><i class="icon-cerrar_a"></i></button>
+            
+        </div><br>
+    </div>
+         
+</div>
+
+<div class="box menu">
+    <div class="menu"></div>
+</div>

@@ -1,0 +1,89 @@
+.subcontenido.item{
+    padding-top: 60px;
+    width: 82%;
+    position: relative;
+    display:block;
+    margin: auto;
+}
+
+.item h1{
+    font-family: gothic;
+    font-size: 1.4em;
+}
+
+.form#item{
+    width: 90%;
+}
+
+.form#item .textbox .field {
+    text-transform: uppercase;
+}
+
+.form#item .textbox #descripcion {
+    text-transform: none;
+}
+
+.infobox.item .espacio.left{
+    text-align: left;
+    width: 74%;
+    font-family: gothic;
+    color: #716d6d;
+}
+
+.infobox.item .espacio.left h2{
+    font-size: .9em;
+}
+
+.infobox.item .espacio.left p{
+    font-size: .8em;
+}
+
+.infobox.item .espacio.right{
+    text-align: right;
+    width: 24%;
+}
+
+.infobox.item .espacio.right i{
+    color:#13cc30;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width:1280px) {
+
+    .subcontenido.item{
+        width: 88%;
+    }
+
+}
+
+@media screen and (max-width:1120px) {
+
+    .subcontenido.item{
+        width: 94%;
+    }
+
+}
+
+@media screen and (max-width: 960px){
+
+    .subcontenido.item{
+        width: 100%;
+    }
+
+    .form#item{
+        width: 95%;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+
+    .subcontenido.item{
+        width: 100%;
+    }
+
+    .form#item{
+        width: 100%;
+    }
+
+}

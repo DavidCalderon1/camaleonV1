@@ -1,0 +1,145 @@
+<link rel="stylesheet" type="text/css" href="/app/view/css/tercero/tercero.css"/>
+<script src="/app/controller/js/tercero/view.js"></script>
+
+<div class="box">
+    <div class="contenido">
+        
+        <div class="subcontenido tercero">
+            
+            <h1>Tercero</h1><br>
+
+            <form class="form view" id="tercero" method="post" action="/app/controller/php/tercero/tercero.php">
+                
+                <div class="subform">
+                    
+                    <div class="bar">
+                        <a class="link" href="#" data-url="/app/view/html/tercero/update.html" data-name="Update Tercero"><i class="icon-editar"></i></a>
+                    </div>
+                
+                    <div class="fieldbox select width_3">
+                        <label>REGIMEN</label>
+                        <select class="field" name="regimen" disabled>
+                            <option value="SIMPLIFICADO">SIMPLIFICADO</option>
+                            <option value="COMUN">COMUN</option>
+                        </select>
+                    </div>
+
+                    <div class="fieldbox rc width_3">
+                        <label class="placeholder">GRAN CONTRIBUYENTE</label>
+                        <div class="option">
+                            <input id="si" class="radiobutton" type="radio" name="estado" value="true" disabled/>
+                            <label for="si">SI</label>
+                        </div>
+                        <div class="option">
+                            <input id="no" class="radiobutton" type="radio" name="estado" value="false" disabled/>
+                            <label for="no">NO</label>
+                        </div>
+                    </div>
+                    
+
+                    <div class="fieldbox rc width_4">
+                        <label class="placeholder">TIPO</label>
+                        <div class="option">
+                            <input id="persona" class="radiobutton" type="radio" name="tipo" value="natural"  disabled/>
+                            <label for="persona">NATURAL</label>
+                        </div>
+                        <div class="option">
+                            <input id="juridica" class="radiobutton" type="radio" name="tipo" value="juridica" disabled/>
+                            <label for="juridica">JURIDICA</label>
+                        </div>
+                    </div><br>
+
+                    <div class="fieldbox textbox width_4 persona">
+                        <label>NOMBRES</label>
+                        <input class="field" type="text" name="nombre" disabled/>
+                    </div>
+
+                    <div class="fieldbox textbox width_4 persona">
+                        <label>APELLIDOS</label>
+                        <input class="field" type="text" name="apellido" disabled/>
+                    </div>
+
+                    <div class="fieldbox select width_4 persona">
+                        <label>TIPO DE DOCUMENTO</label>
+                        <select class="field" name="tipo_documento" disabled>
+                            <option value="CEDULA DE CIUDADANIA">CEDULA DE CIUDADANIA</option>
+                            <option value="REGISTRO CIVIL">REGISTRO CIVIL</option>
+                            <option value="PASAPORTE">PASAPORTE</option>
+                            <option value="TARJETA DE IDENTIDAD">TARJETA DE IDENTIDAD</option>
+                            <option value="CEDULA DE EXTRANJERIA">CEDULA DE EXTRANJERIA</option>
+                            <option value="CODIGO FISCAL">CODIGO FISCAL</option>
+                        </select>
+                    </div>      
+                    
+                    <div class="fieldbox textbox width_4 persona">
+                        <label>NUMERO DOCUMENTO</label>
+                        <input class="field" type="text" name="numero_documento" disabled/>
+                    </div>
+                    
+                    <div class="fieldbox textbox width_4 juridica">
+                        <label>NIT</label>
+                        <input class="field" type="text" name="nit" disabled/>
+                    </div>
+                    
+                    <div class="fieldbox textbox width_4 juridica">
+                        <label>RAZON SOCIAL</label>
+                        <input class="field" type="text" name="razon_social" disabled/>
+                    </div>
+                    
+                    <div class="fieldbox select width_4 juridica">
+                        <label>NATURALEZA</label>
+                        <select class="field" name="naturaleza" disabled>
+                            <option value="PUBLICA">PUBLICA</option>
+                            <option value="PRIVADA">PRIVADA</option>
+                            <option value="MIXTA">MIXTA</option>
+                        </select>
+                    </div>
+
+                    <div class="fieldbox textbox width_4 juridica">
+                        <label>FECHA DE CONSTITUCION</label>
+                        <input class="field" type="text" name="fecha" disabled/>
+                    </div>
+
+                    <div class="fieldbox select width_4">
+                        <label>PAIS</label>
+                        <select class="field" name="pais" id="pais" data-entity="pais" disabled>
+                        </select>
+                    </div>
+
+                    <div class="fieldbox select width_4">
+                        <label>DEPARTAMENTO</label>
+                        <select class="field" name="departamento" id="dep" data-entity="departamento" disabled>
+                        </select>
+                    </div>
+
+                    <div class="fieldbox select width_4">
+                        <label>CIUDAD</label>
+                        <select class="field" name="ciudad" id="cdd" data-entity="ciudad" disabled>
+                        </select>
+                    </div><br>
+                    
+                    <div class="fieldbox textbox width_4">
+                        <label>DIRECCION</label>
+                        <input class="field" type="text" name="direccion" disabled/>
+                    </div>
+
+                    <div class="fieldbox textbox width_4">
+                        <label>TELEFONO</label>
+                        <input class="field" type="text" name="telefono" disabled/>
+                    </div>
+                    </div><br>
+                
+                </div>
+
+            </form><br>
+            
+            <button class="btnCloseContent"><i class="icon-cerrar_a"></i></button>
+
+        </div>
+        
+    </div>
+</div>
+
+<div class="box menu">
+    <div class="menu"></div>
+</div>

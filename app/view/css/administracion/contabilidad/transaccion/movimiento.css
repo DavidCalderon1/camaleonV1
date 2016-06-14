@@ -1,0 +1,160 @@
+.subcontenido.movimiento{
+    padding-top: 60px;
+    width: 82%;
+    position: relative;
+    display:block; 
+    margin: auto;
+}
+
+.movimiento h1{
+    font-family: gothic;
+    font-size: 1.4em;
+}
+
+.form#movimiento{
+    width: 80%;
+}
+
+.form#movimiento .textbox .field {
+    text-transform: uppercase;
+}
+
+.form#movimiento .textbox #descripcion {
+    text-transform: none;
+}
+
+.form#movimiento .textbox#suc {
+    display: block;
+    margin: auto;
+}
+
+.form#movimiento .textbox#cta {
+    display: block;
+    margin: auto;
+}
+
+.infobox.movimiento .espacio{
+    width: 100%;
+}
+
+.infobox.movimiento .subespacio{
+    width: 100%;
+    text-align: right;
+}
+
+.infobox.movimiento .subespacio i{
+    color:#13cc30;
+    font-size: 1.2em;
+}
+
+.infobox.movimiento .espacio .campo{
+    position: relative;
+    display: inline-block;
+    width: 32%;
+    font-family: gothic;
+    margin-top: 14px;
+}
+
+.infobox.movimiento .espacio .campo label{
+    position: absolute;
+    width: 100%;
+    top: -14px; left: 2px;
+    font-size: 0.7em;color: #00b74d;
+}
+
+.infobox.movimiento .espacio .campo .text{
+    position: relative;
+    width: 100%;
+    color: #716d6d;
+    overflow: hidden;
+}
+
+/*.infobox.movimiento .espacio.left{
+    text-align: left;
+    width: 74%;
+    font-family: gothic;
+    color: #716d6d;
+}
+
+.infobox.movimiento .espacio.left h2{
+    font-size: .9em;
+}
+
+.infobox.movimiento .espacio.left p{
+    font-size: .8em;
+}
+
+.infobox.movimiento .espacio.right{
+    text-align: right;
+    width: 24%;
+}
+*/
+
+@media screen and (max-width:1280px) {
+ 
+    .subcontenido.movimiento{
+        width: 88%;
+    }
+
+}
+
+@media screen and (max-width:1120px) {
+    
+    .subcontenido.movimiento{
+        width: 94%;
+    }
+
+}
+
+@media screen and (max-width: 960px){
+    
+    .subcontenido.movimiento{
+        width: 100%;
+    }
+    
+    .form#movimiento{
+        width: 85%;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    
+    .form#movimiento{
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width: 640px){
+    
+    .form#movimiento{
+        width: 95%;
+    }
+    
+    .form#movimiento .fieldbox {
+        width: 75%;
+        margin-left: auto; margin-right: auto;
+    }
+    
+    .infobox.movimiento .espacio .campo{
+        width: 48%;
+    }
+    
+    .infobox.movimiento .espacio .campo.vab{
+        display: block; width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    
+    .form#movimiento{
+        width: 100%;
+    }
+
+    .form#movimiento .fieldbox {
+        width: 95%;
+    }
+    
+}

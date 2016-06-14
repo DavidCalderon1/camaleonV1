@@ -1,0 +1,51 @@
+<script src="/app/controller/js/administracion/contabilidad/transaccion/update.js"></script>
+<link rel="stylesheet" type="text/css" href="/app/view/css/administracion/contabilidad/transaccion/transaccion.css">
+
+<div class="box">
+    <div class="contenido">
+        
+        <div class="subcontenido transaccion">
+            
+            <h1>Transacción</h1><br>
+            
+            <div class="boxshadow">
+            
+                <form class="form" id="transaccion" action="/app/controller/php/administracion/contabilidad/transaccion/transaccion.php" method="post">
+
+                    <div class="subform">
+
+                        <input type="hidden" name="actualizar" value="true">
+
+                        <div class="fieldbox textbox width_4">
+                            <label>FECHA</label>
+                            <input class="field" type="text" name="fecha" id="fecha">
+                        </div>
+
+                        <div class="fieldbox select width_6">
+                            <select class="field" name="tipodoc" id="tipodoc" data-entity="tipodoc">
+                                <option value="">TIPO DE DOCUMENTO</option>
+                            </select>
+                        </div>
+
+                        <div class="fieldbox textbox width_10">
+                            <label>DESCRIPCIÓN TRANSACCIÓN</label>
+                            <textarea class="field" name="descripcion" id="descripcion" rows="1"></textarea>
+                        </div>
+
+                        <button class="button">ACTUALIZAR</button>
+
+                    </div>
+
+                </form>
+            </div>
+            
+            <button class="btnCloseContent"><i class="icon-cerrar_a"></i></button>
+            
+        </div><br>
+    </div>
+         
+</div>
+
+<div class="box menu">
+    <div class="menu"></div>
+</div>

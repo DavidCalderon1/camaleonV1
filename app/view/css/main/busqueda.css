@@ -1,0 +1,111 @@
+.busqueda{
+    margin-top: 60px;    
+}
+
+.busqueda_a{
+    width: 80%;
+    height: 280px;
+    box-shadow:-1px 1px 6px #757575;
+    padding: 5%; margin: auto;
+}
+
+.busqueda_a h1 {
+    font-family: gothic;
+    font-size: 1.3em;
+}
+
+.busqueda_a section{
+    position: relative;
+    display: inline-block;
+    width: 48%;
+    vertical-align: middle;
+}
+
+.subcontenido section.right{
+    height: 240px;
+    overflow-y:scroll;
+    border-left: 1px solid #c3c3c3;
+}
+
+.busqueda_a section .form{
+    margin-top: 20px; 
+    margin-left: auto;margin-right: auto;
+    box-shadow: none;
+}
+
+.busqueda_a section .form .fieldbox.rc .option label {
+    font-size: .8em;
+}
+
+.infobox {
+    margin: 1% 4% 3% 4%;
+    box-shadow:-1px 1px 6px #757575;
+}
+
+.infobox .subform {
+    padding: 2%;
+}
+
+.infobox .espacio{
+    display: inline-block;
+}
+
+.infobox .link{
+    text-decoration: none;
+}
+
+@media screen and (max-width:1120px){
+    
+    .busqueda_a{
+        height: 0%;
+    }
+    
+    .busqueda_a section{
+         display: block; 
+         margin: auto;
+         width: 100%;
+    }
+    
+    .subcontenido section.right{
+        border: none;
+        height: 0%;
+    }
+    
+    .busqueda_a section .form .fieldbox{
+        width: 55%;
+    }
+    
+}
+
+@media screen and (max-width: 960px){
+    
+    .busqueda_a section .form .fieldbox{
+        width: 65%;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    
+    .busqueda_a section .form .fieldbox{
+        width: 75%;
+    }
+    
+}
+
+@media screen and (max-width: 640px){
+    
+    .busqueda_a section .form .fieldbox{
+        width: 85%;
+        margin-left: auto;margin-right: auto;
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    
+    .busqueda_a section .form .fieldbox{
+        width: 95%;
+    }
+    
+}

@@ -1,0 +1,33 @@
+
+.cover {
+    display: none;
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    margin: auto;
+    background: rgba(33, 33, 33, .6);
+    z-index: 1;
+    -webkit-transition:all 3s;
+    transition:all 3s;
+}
+
+.cover.show {
+    display: flex;
+}
+
+.cover i {
+    margin: auto;
+    font-size: 6em;
+    color: #2196F3;
+    -webkit-animation: turn .8s infinite linear;
+    animation: turn .8s infinite linear;
+}
+
+@-webkit-keyframes turn {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes turn {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}

@@ -1,0 +1,108 @@
+.subcontenido.sucursal{
+    padding-top: 60px;
+    width: 82%;
+    position: relative;
+    display:block; 
+    margin: auto;
+}
+
+.sucursal h1{
+    font-family: gothic;
+    font-size: 1.4em;
+}
+
+.form#sucursal{
+    width: 80%;
+}
+
+.form#sucursal .textbox .field {
+    text-transform: uppercase;
+}
+
+.form#sucursal #cdd {
+    display: block;
+}
+
+.infobox.sucursal .espacio.left{
+    text-align: left;
+    width: 74%;
+    font-family: gothic;
+    color: #716d6d;
+}
+
+.infobox.sucursal .espacio.left h2{
+    font-size: .9em;
+}
+
+.infobox.sucursal .espacio.left p{
+    font-size: .8em;
+}
+
+.infobox.sucursal .espacio.right{
+    text-align: right;
+    width: 24%;
+}
+
+.infobox.sucursal .espacio.right i{
+    color:#13cc30;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width:1280px) {
+ 
+    .subcontenido.sucursal{
+        width: 88%;
+    }
+
+}
+
+@media screen and (max-width:1120px) {
+    
+    .subcontenido.sucursal{
+        width: 94%;
+    }
+
+}
+
+@media screen and (max-width: 960px){
+    
+    .subcontenido.sucursal{
+        width: 100%;
+    }
+    
+    .form#sucursal{
+        width: 85%;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    
+    .form#sucursal{
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width: 640px){
+    
+    .form#sucursal{
+        width: 95%;
+    }
+    
+    .form#sucursal .fieldbox {
+        width: 75%;
+        margin-left: auto; margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 480px){
+    
+    .form#sucursal{
+        width: 100%;
+    }
+
+    .form#sucursal .fieldbox {
+        width: 95%;
+    }
+}

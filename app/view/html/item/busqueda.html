@@ -1,0 +1,56 @@
+<link rel="stylesheet" type="text/css" href="/app/view/css/item/item.css">
+<script type="text/javascript" src="/app/controller/js/item/busqueda.js"></script>
+
+<div class="box">
+   <div class="contenido">
+      <div class="subcontenido busqueda">
+         <div class="busqueda_a">
+            <h1>BUSQUEDA ITEMS</h1>
+            <section class="left">
+               <form class="form" id="item" method="post" action="/app/controller/php/item/item.php">
+                  <div class="subform">
+                     <input type="hidden" name="buscar" value="true">
+                     <div class="fieldbox textbox width_10">
+                        <label>BÚSQUEDA</label>
+                        <input class="field" type="search" name="parametro">
+                     </div>
+                     <div class="fieldbox rc width_8" id="filtro">
+                        <label class="placeholder">FILTRAR</label>
+                        <div class="option">
+                           <input  class="radiobutton" type="radio" name="tipo" value="materia_prima" checked>
+                           <label for="filtro">MATERIA PRIMA</label>
+                        </div>
+                        <div class="option">
+                           <input  class="radiobutton" type="radio" name="tipo" value="producto_proceso">
+                           <label for="filtro">PRODUCTO EN PROCESO</label>
+                        </div>
+                        <div class="option">
+                           <input  class="radiobutton" type="radio" name="tipo" value="producto_terminado">
+                           <label for="filtro">PRODCUTO TERMINADO</label>
+                        </div>
+                     </div>
+                     <br>
+                     <button class="button">BUSCAR</button>
+                  </div>
+               </form><br>
+            </section>
+            <section class="right result">
+
+                <form class="infobox item" method="post" action="/app/controller/php/item/item.php">
+
+                    <input name="instanciar" type="hidden" value="true"/>
+                    <input type="hidden" name="id_sucursal" value="id"/>
+                    <div class="subform">
+                        <div class="espacio left"><h2>NOMBRE</h2><p>TIPO</p></div>
+                        <div class="espacio right"><a class="link" href="#"><i class="icon-ver"></i></a></div>
+                    </div>
+
+                </form>
+
+            </section>
+
+         </div>
+         <button class="btnCloseContent"><i class="icon-cerrar_a"></i></button>
+      </div>
+   </div>
+</div>

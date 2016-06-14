@@ -1,0 +1,66 @@
+<script src="/app/controller/js/administracion/sucursal/form.js"></script>
+<link rel="stylesheet" type="text/css" href="/app/view/css/administracion/sucursal/sucursal.css">
+
+
+<div class="box">
+    <div class="contenido">
+        
+        <div class="subcontenido sucursal">
+            
+            <h1>Crear Sucursal</h1><br>
+            
+            <form class="form" id="sucursal" action="/app/controller/php/administracion/sucursal/sucursal.php" method="post">
+
+                <div class="subform">
+                    
+                    <input type="hidden" name="registrar" value="true">
+                    <div class="fieldbox textbox width_8">
+                        <label>NOMBRE SUCURSAL</label>
+                        <input class="field" type="text" name="nombre" id="nombre">
+                    </div>
+
+                   <div class="fieldbox select width_5">
+                        <select class="field" name="pais" id="pais" data-entity="pais">
+                            <option value="">PAIS</option>
+                        </select>
+                    </div>
+
+                    <div class="fieldbox select width_5">
+                        <select class="field" name="departamento" id="dep" data-entity="departamento">
+                            <option value="">DEPARTAMENTO</option>
+                        </select>
+                    </div>
+
+                    <div class="fieldbox select width_5">
+                        <select class="field" name="ciudad" id="cdd" data-entity="ciudad">
+                            <option value="">CIUDAD</option>
+                        </select>
+                    </div>
+
+                    <div class="fieldbox textbox width_7">
+                        <label>DIRECCIÓN</label>
+                        <input class="field" type="text" name="dir" id="dir">
+                    </div>
+
+                    <div class="fieldbox textbox width_3">
+                        <label>TELÉFONO</label>
+                        <input class="field" type="text" name="tel" id="tel">
+                    </div>
+
+                    <button class="button">CREAR</button>
+
+                </div>    
+
+            </form>
+            
+            <button class="btnCloseContent"><i class="icon-cerrar_a"></i></button>
+            
+        </div><br>
+    </div>
+         
+</div>
+
+<div class="box menu">
+    <div class="menu"></div>
+</div>
+       

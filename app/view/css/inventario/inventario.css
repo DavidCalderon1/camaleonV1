@@ -1,0 +1,144 @@
+.subcontenido.inventario{
+    padding-top: 60px;
+    width: 82%;
+    position: relative;
+    display:block; 
+    margin: auto;
+}
+
+.inventario h1{
+    font-family: gothic;
+    font-size: 1.4em;
+}
+
+.form#inventario{
+    width: 80%;
+}
+
+.form#inventario .textbox .field {
+    text-transform: uppercase;
+}
+
+.form#inventario .item,
+.form#inventario .button {
+    display: block;
+    margin-right: auto;margin-left: auto; 
+}
+
+.infobox.inventario .espacio.up,
+.infobox.inventario .espacio.down
+{
+    display: block;
+}
+
+.infobox.inventario .espacio.up{
+    text-align: left;
+    width: 100%;
+    font-family: gothic;
+    color: #716d6d;
+}
+
+.infobox.inventario .espacio.up h2{
+    font-size: .9em;
+}
+
+.infobox.inventario .espacio.up table{
+    width: 100%;
+    border-spacing: 2px;
+}
+
+.infobox.inventario .espacio.up table tbody td,
+.infobox.inventario .espacio.up table thead th{
+    font-size: .8em;
+}
+
+.infobox.inventario .espacio.down{
+    text-align: right;
+    width: 100%;
+}
+
+.infobox.inventario .espacio.left{
+    text-align: left;
+    width: 74%;
+    font-family: gothic;
+    color: #716d6d;
+}
+
+.infobox.inventario .espacio.left h2{
+    font-size: .9em;
+}
+
+.infobox.inventario .espacio.left p{
+    font-size: .8em;
+}
+
+.infobox.inventario .espacio.right{
+    text-align: right;
+    width: 24%;
+}
+
+.infobox.inventario .espacio.right i,
+.infobox.inventario .espacio.down i{
+    color:#13cc30;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width:1280px) {
+ 
+    .subcontenido.inventario{
+        width: 88%;
+    }
+
+}
+
+@media screen and (max-width:1120px) {
+    
+    .subcontenido.inventario{
+        width: 94%;
+    }
+
+}
+
+@media screen and (max-width: 960px){
+    
+    .subcontenido.inventario{
+        width: 100%;
+    }
+    
+    .form#inventario{
+        width: 85%;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    
+    .form#inventario{
+        width: 90%;
+    }
+
+    .form#inventario .fieldbox {
+        width: 75%;
+        margin-left: auto; margin-right: auto;
+    }
+    
+}
+
+@media screen and (max-width: 640px){
+    
+    .form#inventario{
+        width: 95%;
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    
+    .form#inventario{
+        width: 100%;
+    }
+
+    .form#inventario .fieldbox {
+        width: 95%;
+    }
+}
